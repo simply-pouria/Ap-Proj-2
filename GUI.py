@@ -18,6 +18,9 @@ class Position:
         center = [self.x, self.y]
         canvas.create_oval(center[0] - self.r, center[1] - self.r, center[0] + self.r, center[1] + self.r, fill=self.color)
 
+    def change_color(self, new_color):
+            del self
+            return Position(self.x, self.y, self.r, new_color)
 
 root.title("Circles and Arcs")
 root.mainloop()
