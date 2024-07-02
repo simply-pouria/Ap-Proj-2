@@ -106,9 +106,9 @@ def game_map_window(color: str):
     player_1 = Player(color, cv=main_cv)
 
     if color == "blue":
-        player_2 = Player("red", cv=main_cv)
-    if color == "red":
         player_2 = Player("blue", cv=main_cv)
+    if color == "red":
+        player_2 = Player("red", cv=main_cv)
 
     # a class to ease working with circle positions in the game map
     class PositionCircle:
